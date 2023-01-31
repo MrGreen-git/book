@@ -1,0 +1,4 @@
+name: test
+description: test_description
+url: https://mrgreen-git.github.io
+markdown: kramdown
