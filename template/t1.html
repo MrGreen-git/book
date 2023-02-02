@@ -1,0 +1,28 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+</head>
+<body>
+<div>Header</div>
+<table>
+<tr>
+	<td>11</td><td>12</td>
+</tr>
+<tr>
+	<td>21</td><td>22</td>
+</tr>
+<tr>
+	<td>31</td><td>32</td>
+</tr>
+</table>
+
+<script>
+    $.getJSON('http://time.jsontest.com', function(data) {
+
+        console.log(data);
+    });
+    </script>
+
+</body>
+</html>

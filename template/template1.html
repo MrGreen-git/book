@@ -1,0 +1,115 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+<link rel="stylesheet" href="./../tree/dist/themes/default/style.min.css" />
+<script src="./../tree/dist/jstree.min.js"></script>
+<style>
+  .column1 {
+  float: left;
+  width: 80%;
+}
+
+.column2 {
+  float: left;
+  width: 20%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+</head>
+<body>
+<div style="border: 1px solid #0F0F0F; position: fixed;
+top: 0;
+left: 0;
+z-index: 999;
+width: 100%;
+height: 50px;">List
+  <div id="list"></div>
+</div>
+
+<div class="row" style="margin-top:50px;">
+
+  <div id="content" class="column1">
+    <iframe id = "iframe1" src="banner.html" frameborder="0" allowfullscreen style="width:100%;height:95%;">
+      Ваш браузер не поддерживает плавающие фреймы!
+    </iframe>
+  </div>
+
+  <div class="column2">
+      <div>Tree</div>
+      <div id="tree">
+        <div id="tree1"></div>
+  </div>
+
+</div>
+<script>
+
+
+//Проверить параметры
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+
+
+const page_list = urlParams.get('L')
+GetJsonFile(CreateList, `../list/${page_list}.json`);
+
+const page_tree = urlParams.get('T')
+GetJsonFile(CreateTree, `../tree/${page_tree}.json`);
+
+
+function GetJsonFile(callback, path)
+{
+  $.getJSON(path)
+  .done((data)=>{
+    console.log(`F GetJsonFile ${path} - OK`);
+    callback(data);
+  })
+  .fail(()=>{
+    console.log(`F GetJsonFile ${path} - ERROR`);
+  });
+}
+
+//Заполнение верхнюю часть страницы (меню)
+function CreateList(data)
+{
+  for (var i = 0, len = data.length; i < len; i++) {
+    $( "#list" ).append(`<a  onclick='GetJsonFile(UpdateTree, "../tree/${data[i].link}.json");' href='#'">${data[i].title}</a>---`);
+		
+    console.log(data[i]);
+    }
+}
+
+
+//Заполненения дерева
+function UpdateTree(data)
+{
+  $('#tree').jstree(true).settings.core.data = data;  
+  $('#tree').jstree(true).refresh();  
+}
+
+
+//Заполненения дерева
+function CreateTree(data)
+{
+  $('#tree').jstree({
+        'core' : {
+          'data' : data
+        }
+        });
+
+        $('#tree') 
+   .on("changed.jstree", function (e, data) {console.log(data.selected);}) 
+   .on("select_node.jstree", function (e, data) {$("#iframe1").attr('src', data.instance.get_node(data.node, true).children('a').attr('href'));
+  }); 
+}
+
+</script>
+
+</body>
+</html>
