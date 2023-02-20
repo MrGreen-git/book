@@ -1,4 +1,8 @@
 HostBuilderContext
   -> IHostEnvironment
+    -> EnvironmentName
+    -> ApplicationName
+    -> ContentRootPath
+    -> ContentRootFileProvider
   -> IConfiguration
   -> Properties
