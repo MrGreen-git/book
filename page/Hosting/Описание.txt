@@ -1,0 +1,4 @@
+HostBuilderContext
+  -> IHostEnvironment
+  -> IConfiguration
+  -> Properties
