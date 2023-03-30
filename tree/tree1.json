@@ -1,4 +1,4 @@
 [
-   { "id" : "1", "parent" : "#", "text" : "Стандарты С++", "a_attr" : { "href" : "/book/page/cpp/1.Cpp.html"} },
-   { "id" : "2", "parent" : "#", "text" : "Ключевые слова", "a_attr" : { "href" : "/book/page/cpp/2.Cpp_Ключевые слова.html"} }
+   { "id" : "1", "parent" : "#", "text" : "Стандарты С++", "a_attr" : { "href" : "/book/page/cpp/1.Стандарт.html"} },
+   { "id" : "2", "parent" : "#", "text" : "Ключевые слова", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} }
 ]
