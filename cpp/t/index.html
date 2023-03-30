@@ -78,10 +78,10 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 
 
-const page_list = urlParams.get('L')
+const page_list = urlParams.get('l')
 GetJsonFile(CreateList, `../list/${page_list}.json`);
 
-const page_tree = urlParams.get('T')
+const page_tree = urlParams.get('t')
 GetJsonFile(CreateTree, `../tree/${page_tree}.json`);
 
 
