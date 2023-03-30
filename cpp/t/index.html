@@ -101,7 +101,7 @@ function GetJsonFile(callback, path)
 function CreateList(data)
 {
   for (var i = 0, len = data.length; i < len; i++) {
-    $( "#list" ).append(`<a  onclick='GetJsonFile(UpdateTree, "../tree/${data[i].link}.json");' href='#'">${data[i].title}</a>---`);
+    $( "#list" ).append(`<a  onclick='GetJsonFile(UpdateTree, "../../tree/${data[i].link}.json");' href='#'">${data[i].title}</a>---`);
 		
     console.log(data[i]);
     }
