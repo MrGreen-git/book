@@ -11,8 +11,8 @@
 		
 <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 
-<link rel="stylesheet" href="/book/wwwroot/jsTree/themes/default/style.min.css" />
-<script src="/book/wwwroot/jsTree/jstree.min.js"></script>
+<link rel="stylesheet" href="/book/_wwwroot/jsTree/themes/default/style.min.css" />
+<script src="/book/_wwwroot/jsTree/jstree.min.js"></script>
 <style>
   .column1 {
   float: left;
@@ -79,10 +79,10 @@ const urlParams = new URLSearchParams(queryString);
 
 
 const page_list = urlParams.get('l')
-GetJsonFile(CreateList, `../../list/${page_list}.json`);
+GetJsonFile(CreateList, `/book/_list/${page_list}.json`);
 
 const page_tree = urlParams.get('t')
-GetJsonFile(CreateTree, `../../tree/${page_tree}.json`);
+GetJsonFile(CreateTree, `/book/_tree/${page_tree}.json`);
 
 
 function GetJsonFile(callback, path)
@@ -101,7 +101,7 @@ function GetJsonFile(callback, path)
 function CreateList(data)
 {
   for (var i = 0, len = data.length; i < len; i++) {
-    $( "#list" ).append(`<a  onclick='GetJsonFile(UpdateTree, "../../tree/${data[i].link}.json");' href='#'">${data[i].title}</a>---`);
+    $( "#list" ).append(`<a  onclick='GetJsonFile(UpdateTree, "/book/_tree/${data[i].link}.json");' href='#'">${data[i].title}</a>---`);
 		
     console.log(data[i]);
     }
