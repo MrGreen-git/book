@@ -2,6 +2,17 @@
    { "id" : "1", "parent" : "#", "text" : "Стандарты С++", "a_attr" : { "href" : "/book/page/cpp/1.Стандарт.html"} },
    { "id" : "2", "parent" : "#", "text" : "Ключевые слова", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} },
    
+   { "id" : "i21", "parent" : "#", "text" : "Инструкции", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} },
+      { "id" : "i22", "parent" : "i21", "text" : "Присваивания и выражения", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} },
+      { "id" : "i23", "parent" : "i21", "text" : "Составная инструкция", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} },
+      { "id" : "i24", "parent" : "i21", "text" : "Инструкция if и if-else", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} },
+      { "id" : "i25", "parent" : "i21", "text" : "Инструкция while", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} },
+      { "id" : "i26", "parent" : "i21", "text" : "Инструкция for", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} },
+      { "id" : "i27", "parent" : "i21", "text" : "Инструкция do", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} },
+      { "id" : "i28", "parent" : "i21", "text" : "Инструкции break и continue", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} },
+      { "id" : "i29", "parent" : "i21", "text" : "Инструкция switch", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} },
+      { "id" : "i30", "parent" : "i21", "text" : "Инструкция goto", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} }
+   
    { "id" : "p21", "parent" : "#", "text" : "Типы указателей", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} },
       { "id" : "p22", "parent" : "p21", "text" : "Определение адреса и разыменование", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} },
       { "id" : "p23", "parent" : "p21", "text" : "Вызов по ссылке на основе указателей", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} },
