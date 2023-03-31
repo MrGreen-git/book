@@ -9,5 +9,5 @@
    
    { "id" : "p21", "parent" : "#", "text" : "Типы указателей", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} },
       { "id" : "p22", "parent" : "p21", "text" : "Определение адреса и разыменование", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} },
-      { "id" : "p23", "parent" : "p22", "text" : "Вызов по ссылке на основе указателей", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} },
+      { "id" : "p23", "parent" : "p22", "text" : "Вызов по ссылке на основе указателей", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} }
 ]
