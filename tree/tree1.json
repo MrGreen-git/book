@@ -1,4 +1,9 @@
 [
    { "id" : "1", "parent" : "#", "text" : "Стандарты С++", "a_attr" : { "href" : "/book/page/cpp/1.Стандарт.html"} },
-   { "id" : "2", "parent" : "#", "text" : "Ключевые слова", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} }
+   { "id" : "2", "parent" : "#", "text" : "Ключевые слова", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} },
+   
+   
+   { "id" : "21", "parent" : "#", "text" : "Массивы и указатели", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} },
+      { "id" : "22", "parent" : "21", "text" : "Индексирование", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} },
+      { "id" : "23", "parent" : "21", "text" : "Инициализация", "a_attr" : { "href" : "/book/page/cpp/2.Ключевые слова.html"} }
 ]
