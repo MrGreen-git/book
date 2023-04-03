@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+
 | Функция  |СИ                            |  |Библиотека|
 |----------|------------------------------|--|----------|
 |clearerr  |void clearerr (FILE * stream )|Функция сбрасывает флаг ошибки, связанный с потоком, на который ссылается указатель stream, а также обнуляет индикатор конца файла.|cstdio    |
