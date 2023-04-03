@@ -1,5 +1,5 @@
 [
-   { "id" : "ajson1", "parent" : "#", "text" : "Simple root nodewwwwww"},
+   { "id" : "2", "parent" : "#", "text" : "Функции ввода-вывода", "a_attr" : { "href" : "/book/page/cpp/func1.html"} },
    { "id" : "ajson2", "parent" : "#", "text" : "Root node 2" },
    { "id" : "ajson3", "parent" : "ajson2", "text" : "Child 1" , "a_attr": { "href":"https://admsurgut.ru/" }},
    { "id" : "ajson4", "parent" : "ajson2", "text" : "Child 2" }
