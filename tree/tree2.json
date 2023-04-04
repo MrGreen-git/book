@@ -3,4 +3,13 @@
    { "id" : "ajson2", "parent" : "#", "text" : "Root node 2" },
    { "id" : "ajson3", "parent" : "ajson2", "text" : "Child 1" , "a_attr": { "href":"https://admsurgut.ru/" }},
    { "id" : "ajson4", "parent" : "ajson2", "text" : "Child 2" }
+   
+   { "id" : "op", "parent" : "#", "text" : "Операторы" , "a_attr": { "href":"https://admsurgut.ru/" }},
+      { "id" : "op1", "parent" : "op", "text" : "Условные операторы" , "a_attr": { "href":"https://admsurgut.ru/" }},
+         { "id" : "op2", "parent" : "op1", "text" : "Оператор if" , "a_attr": { "href":"https://admsurgut.ru/" }},
+         { "id" : "op3", "parent" : "op1", "text" : "Вложенные операторы if" , "a_attr": { "href":"https://admsurgut.ru/" }},
+         { "id" : "op4", "parent" : "op1", "text" : "Цепочка операторов if-then-else" , "a_attr": { "href":"https://admsurgut.ru/" }},
+         { "id" : "op5", "parent" : "op1", "text" : "Тернарная альтернатива" , "a_attr": { "href":"https://admsurgut.ru/" }},
+         { "id" : "op6", "parent" : "op1", "text" : "Оператор switch" , "a_attr": { "href":"https://admsurgut.ru/" }},
+         { "id" : "op7", "parent" : "op1", "text" : "Вложенные операторы switch" , "a_attr": { "href":"https://admsurgut.ru/" }}
 ]
