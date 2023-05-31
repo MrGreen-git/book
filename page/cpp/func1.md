@@ -19,7 +19,7 @@
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Mark</td>
+      <td>Mark ```void clearerr (FILE * stream )```</td>
       <td>Otto</td>
       <td>@mdo</td>
     </tr>
